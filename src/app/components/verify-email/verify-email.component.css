@@ -1,0 +1,15 @@
+.btnPrimary:hover{
+    background-color: #0cd37d !important;
+}
+.btnPrimary {
+    background-color: #00ff92 !important;
+    border-color: #00ff92 !important;}
+.container{
+    background-color: white !important;
+    opacity: 85%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h3,p ,span {
+    color: black!important;
+}

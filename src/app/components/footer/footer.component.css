@@ -1,0 +1,12 @@
+.btn-dark:hover{
+    color: royalblue !important;
+}
+.linked {
+    color: black;
+}
+.linked:hover {
+    color: blue !important;
+}
+mr-3{
+    padding-left: 0%!important;
+}

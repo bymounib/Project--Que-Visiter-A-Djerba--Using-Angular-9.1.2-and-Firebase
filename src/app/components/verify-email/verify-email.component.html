@@ -1,0 +1,45 @@
+<!-- Masthead-->
+<header class="masthead" id="services">
+  <div class="container" >
+    <h3>Merci de votre inscription</h3>
+      
+      <br>
+      <div class="row">
+          <div class="col-lg-12 col-sm-12 mb-12" *ngIf="authService.userData as user">
+              
+            
+              <p class="text-center">Nous avons envoyé un e-mail de confirmation à <strong>{{user.email}}</strong></p>
+              <p class="text-center">Veuillez vérifier votre e-mail et cliquez sur le lien pour vérifier votre adresse e-mail.</p>
+            
+          </div>
+          
+      <div class="col-lg-12 col-sm-12 mb-12" >
+        <div class="formGroup">
+          <button type="button" class="btn btnPrimary" (click)="authService.SendVerificationMail()">
+            <i class="fas fa-redo-alt"></i>
+            Renvoyer l'email de vérification
+          </button>
+        </div>
+        <div class="redirectToLogin">
+          <span>Revenir ?<span class="redirect" (click)="authService.SignOut()"> Se connecter</span></span>
+        </div>
+              
+      </div>
+  </div>
+  </div>
+</header>
+<!-- Services-->
+<div class="row" id="intro">
+          <div class="col-lg-7 col-sm-9 mb-7" >
+      <p class="section-subheading text-muted">Djerba, parfois orthographiée Jerba (arabe : جربة), est une île de 514 km2 (25 kilomètres sur 20 et 150 kilomètres de côtes) située dans le golfe de Gabès au sud-est de la Tunisie. Il s'agit de la plus grande île des côtes d'Afrique du Nord. Sa principale ville, Houmt Souk, compte à elle seule 44 555 habitants.</p>
+
+      <p class="section-subheading text-muted">Ulysse l'aurait traversée, les Carthaginois y ont fondé plusieurs comptoirs et, aux alentours de 587 av. J.-C., l'île accueille des réfugiés juifs après la destruction du Temple de Jérusalem. Les Romains y construisent plusieurs villes et y développent l'agriculture et des ports commerciaux. Chrétienne, vandale, byzantine puis arabe, Djerba est depuis les années 1960 une destination touristique populaire. Il s'agit de l'une des dernières régions de Tunisie où une langue berbère est encore parlée.</p>
+
+      <p class="section-subheading text-muted">Elle est reliée au continent par un bac assurant la traversée entre Ajim au sud-ouest de l'île et Jorf — la traversée dure environ quinze minutes — et par une voie de sept kilomètres qui remonterait à la fin du IIIe siècle av. J.-C. puis restaurée à l'époque romaine et reliant l'extrémité sud-est de l'île (localité d'El Kantara) à la péninsule de Zarzis.   <sub >(wikipédia)</sub></p>
+
+          </div>
+  <div class="col-lg-5 col-sm-3 mb-5">
+  <img class="img-fluid"src="assets/img/ile.jpg">
+  </div>
+</div>
+

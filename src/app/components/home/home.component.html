@@ -1,0 +1,167 @@
+
+<!-- Masthead-->
+<header class="masthead" id="services">
+    <div class="container" >
+        <div class="masthead-subheading">Que Visiter à Djerba ?</div>
+        <h5>Connectez-vous pour y contribuer</h5>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 mb-12" >
+                
+                    <a class="portfolio-link" data-toggle="modal" href="#connecter">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">Se connecter</button>
+                    </a>
+            </div>
+            
+        <div class="col-lg-12 col-sm-12 mb-12" >
+            <a class="portfolio-link" data-toggle="modal" href="#inscrit">
+                <button type="button" class="btn btn-success" style="margin-top: 20px;font-size: 20px;">Inscriver Vous Gratuitement</button>
+            </a>
+                
+        </div>
+    </div>
+    </div>
+</header>
+<!-- Services-->
+ <div class="row" id="intro">
+            <div class="col-lg-7 col-sm-9 mb-7" >
+        <p class="section-subheading text-muted">Djerba, parfois orthographiée Jerba (arabe : جربة), est une île de 514 km2 (25 kilomètres sur 20 et 150 kilomètres de côtes) située dans le golfe de Gabès au sud-est de la Tunisie. Il s'agit de la plus grande île des côtes d'Afrique du Nord. Sa principale ville, Houmt Souk, compte à elle seule 44 555 habitants.</p>
+
+        <p class="section-subheading text-muted">Ulysse l'aurait traversée, les Carthaginois y ont fondé plusieurs comptoirs et, aux alentours de 587 av. J.-C., l'île accueille des réfugiés juifs après la destruction du Temple de Jérusalem. Les Romains y construisent plusieurs villes et y développent l'agriculture et des ports commerciaux. Chrétienne, vandale, byzantine puis arabe, Djerba est depuis les années 1960 une destination touristique populaire. Il s'agit de l'une des dernières régions de Tunisie où une langue berbère est encore parlée.</p>
+
+        <p class="section-subheading text-muted">Elle est reliée au continent par un bac assurant la traversée entre Ajim au sud-ouest de l'île et Jorf — la traversée dure environ quinze minutes — et par une voie de sept kilomètres qui remonterait à la fin du IIIe siècle av. J.-C. puis restaurée à l'époque romaine et reliant l'extrémité sud-est de l'île (localité d'El Kantara) à la péninsule de Zarzis.   <sub >(wikipédia)</sub></p>
+
+            </div>
+    <div class="col-lg-5 col-sm-3 mb-5">
+    <img class="img-fluid"src="assets/img/ile.jpg">
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="connecter" tabindex="-1" role="dialog" aria-hidden="true" >
+  <div class="modal-dialog" >
+  <div class="row justify-content-center">  
+  <div class="modal-dialog" >
+        <div class="modal-content" >
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <div class="displayTable">
+                                <div class="displayTableCell">
+                                    <div class="authBlock">
+                                    <h3 style="margin-top: -10%;">Se connecter</h3>
+                                    <div class="formGroup">
+                                      <input type="text" class="formControl" placeholder="Nom d'utilisateur" #userName required>
+                                    </div>
+                              
+                                    <div class="formGroup">
+                                      <input type="password" class="formControl" placeholder="Mot de passe" #userPassword required>
+                                    </div>
+                              
+                                    <!-- Calling SignIn Api from AuthService -->
+                                    <div class="formGroup">
+                                      <input type="button" class="btn btnPrimary" value="Se connecter" (click)="authService.SignIn(userName.value, userPassword.value)">
+                                    </div>
+                              
+                                    <div class="formGroup">
+                                      <span class="or"><span class="orInner">OU</span></span>
+                                    </div>
+                              
+                                    <!-- Calling GoogleAuth Api from AuthService -->
+                                    <div class="formGroup">
+                                      <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Continuer avec Google
+                                      </button>
+                                    </div>
+                              
+                                    <div class="formGroup">
+                                      <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
+                                        
+                                      Continuer avec Facebook
+                                      </button>
+                                    </div>
+                              
+                                    <div class="forgotPassword">
+                                      <span routerLink="/forgot-password">Mot de Passe oublié?</span>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="redirectToLogin">
+                                    <span>Vous n'avez pas encore un compte?<span class="redirect" routerLink="/register-user"> Inscrivez vous</span></span>
+                                  </div>
+                                <br>
+                                </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></div>
+
+
+<div class="portfolio-modal modal fade" id="inscrit" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog" >
+    <div class="row justify-content-center">  
+    <div class="modal-dialog" >
+          <div class="modal-content" >
+              <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-12">
+                          <div class="modal-body">
+                              <div class="displayTable">
+                                  <div class="displayTableCell">
+                                    <div class="authBlock">
+                                        <h3>Inscrivez vous</h3>
+                                  
+                                        <div class="formGroup">
+                                          <input type="email" class="formControl" placeholder="Email" #userEmail required>
+                                        </div>
+                                  
+                                        <div class="formGroup">
+                                          <input type="password" class="formControl" placeholder="Mot de Passe" #userPwd required>
+                                        </div>
+                                  
+                                        <div class="formGroup">
+                                          <input type="button" class="btn btnPrimary" value="S'inscrire" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+                                        </div>
+                                  
+                                        <div class="formGroup">
+                                          <span class="or"><span class="orInner">OU</span></span>
+                                        </div>
+                                  
+                                        <!-- Continue with Google -->
+                                        <div class="formGroup">
+                                          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                                            <i class="fab fa-google-plus-g"></i>
+                                            Continuer avec Google
+                                          </button>
+                                        </div>
+                                  
+                                        <div class="formGroup">
+                                          <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
+                                            
+                                            
+                                            Continuer avec Facebook
+                                          </button>
+                                        </div>
+                                        
+                                      </div>
+                                  
+                                      <div class="redirectToLogin">
+                                        <span>Vous avez un compte déja? <span class="redirect" routerLink="/sign-in">Se connecter</span></span>
+                                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div></div></div>
+
+
+
