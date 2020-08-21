@@ -42,6 +42,6 @@ These are some screenshots of the website application :
 ![](src/assets/screenshots/10.png)
 
 
-Smart devices vue :
+Small devices vue :
 
 ![](src/assets/screenshots/13.png)
